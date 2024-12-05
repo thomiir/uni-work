@@ -1,0 +1,21 @@
+[2024-04-02 09:20:07] [info] Start Program:
+Path:"C:\Users\alex\OneDrive\Desktop\lab 6 OOP\x64\Debug\lab 6 OOP.exe"
+Arguments:
+Working directory: "C:\Users\alex\OneDrive\Desktop\lab 6 OOP\"
+Modules: Selected: C:\Users\alex\OneDrive\Desktop\lab 6 OOP\x64\Debug\lab 6 OOP.exe Excluded: 
+Sources: Selected: C:\Users\alex\OneDrive\Desktop\lab 6 OOP Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\alex\AppData\Local\Temp\xdqxccdu.olm 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2024-04-02 09:20:09] [info] Module: C:\Users\alex\OneDrive\Desktop\lab 6 OOP\x64\Debug\lab 6 OOP.exe is selected because it matches selected pattern: C:\Users\alex\OneDrive\Desktop\lab 6 OOP\x64\Debug\lab 6 OOP.exe
+[2024-04-02 09:20:09] [info] ----------------------------------------------------
+[2024-04-02 09:20:09] [info] Coverage binary generated in file: C:\Users\alex\AppData\Local\Temp\xdqxccdu.olm
+[2024-04-02 09:20:09] [info] ----------------------------------------------------
