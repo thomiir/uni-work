@@ -1,0 +1,63 @@
+
+
+
+
+
+
+//complexitate O(n)
+vector<TValoare> MDO::stergeValoriPentruCheie(TCheie cheie) {
+    vector<TValoare> valoriEliminate;
+
+    int nodCurent = abc.radacina;
+    int nodParinte = -1;
+    bool gasit = false;
+
+    while (nodCurent != null && !gasit) {
+        if (cheie == abc.noduri[nodCurent].info.first) {
+            gasit = true;
+        } else if (r(cheie, abc.noduri[nodCurent].info.first)) {
+            nodParinte = nodCurent;
+            nodCurent = abc.noduri[nodCurent].stanga;
+        } else {
+            nodParinte = nodCurent;
+            nodCurent = abc.noduri[nodCurent].dreapta;
+        }
+    }
+
+    if (!gasit) {
+        return valoriEliminate;
+    }
+
+    while (nodCurent != null && abc.noduri[nodCurent].info.first == cheie) {
+        valoriEliminate.push_back(abc.noduri[nodCurent].info.second);
+
+        if (abc.noduri[nodCurent].stanga != null) {
+            int maximStanga = minim(abc.noduri[nodCurent].dreapta);
+            abc.noduri[nodCurent].info = abc.noduri[maximStanga].info;
+            nodCurent = maximStanga;
+            nodParinte = abc.noduri[nodCurent].dreapta;
+        } else {
+            if (nodParinte == -1) {
+                abc.radacina = abc.noduri[nodCurent].dreapta;
+            } else if (abc.noduri[nodCurent].info == abc.noduri[nodParinte].info) {
+                abc.noduri[nodParinte].stanga = abc.noduri[nodCurent].dreapta;
+            } else {
+                abc.noduri[nodParinte].dreapta = abc.noduri[nodCurent].dreapta;
+            }
+
+            int nodEliminat = nodCurent;
+            nodCurent = abc.noduri[nodCurent].dreapta;
+
+            if (nodEliminat == abc.primLiber - 1) {
+                abc.primLiber--;
+            } else {
+                abc.noduri[nodEliminat] = abc.noduri[abc.primLiber - 1];
+                abc.primLiber--;
+            }
+        }
+    }
+
+    abc.size -= valoriEliminate.size();
+
+    return valoriEliminate;
+}

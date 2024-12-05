@@ -1,0 +1,10 @@
+﻿  IteratorMD.cpp
+  lab 3 SDA pb 20.cpp
+  MD.cpp
+  TestExtins.cpp
+C:\Users\alex\OneDrive\Desktop\lab 3 SDA pb 20\TestExtins.cpp(230,3): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+C:\Users\alex\OneDrive\Desktop\lab 3 SDA pb 20\TestExtins.cpp(239,3): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+C:\Users\alex\OneDrive\Desktop\lab 3 SDA pb 20\TestExtins.cpp(240,3): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+  TestScurt.cpp
+  Generating Code...
+  lab 3 SDA pb 20.vcxproj -> C:\Users\alex\OneDrive\Desktop\lab 3 SDA pb 20\x64\Debug\lab 3 SDA pb 20.exe
