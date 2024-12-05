@@ -1,0 +1,30 @@
+﻿  domain.cpp
+  repo.cpp
+  service.cpp
+  ui.cpp
+  window.cpp
+  main.cpp
+C:\Users\baroa\OneDrive\Desktop\sem 2\OOP\practic\window.h(6,39): warning C4584: 'Window': base-class 'Observer' is already a base-class of 'Observable'
+  (compiling source file 'window.cpp')
+  C:\Users\baroa\OneDrive\Desktop\sem 2\OOP\practic\observer.h(6,7):
+  see declaration of 'Observer'
+  C:\Users\baroa\OneDrive\Desktop\sem 2\OOP\practic\observer.h(13,7):
+  see declaration of 'Observable'
+  
+C:\Users\baroa\OneDrive\Desktop\sem 2\OOP\practic\window.h(6,39): warning C4584: 'Window': base-class 'Observer' is already a base-class of 'Observable'
+  (compiling source file 'ui.cpp')
+  C:\Users\baroa\OneDrive\Desktop\sem 2\OOP\practic\observer.h(6,7):
+  see declaration of 'Observer'
+  C:\Users\baroa\OneDrive\Desktop\sem 2\OOP\practic\observer.h(13,7):
+  see declaration of 'Observable'
+  
+C:\Users\baroa\OneDrive\Desktop\sem 2\OOP\practic\window.cpp(27,33): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\baroa\OneDrive\Desktop\sem 2\OOP\practic\ui.cpp(59,27): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\baroa\OneDrive\Desktop\sem 2\OOP\practic\window.h(6,39): warning C4584: 'Window': base-class 'Observer' is already a base-class of 'Observable'
+  (compiling source file 'main.cpp')
+  C:\Users\baroa\OneDrive\Desktop\sem 2\OOP\practic\observer.h(6,7):
+  see declaration of 'Observer'
+  C:\Users\baroa\OneDrive\Desktop\sem 2\OOP\practic\observer.h(13,7):
+  see declaration of 'Observable'
+  
+  practic.vcxproj -> C:\Users\baroa\OneDrive\Desktop\sem 2\OOP\practic\x64\Debug\practic.exe

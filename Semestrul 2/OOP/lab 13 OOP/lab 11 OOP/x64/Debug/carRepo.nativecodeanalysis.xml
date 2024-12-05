@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\</FILEPATH>
+      <FILENAME>car.h</FILENAME>
+      <LINE>25</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor should not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Car::{ctor}</FUNCTION>
+    <DECORATED>??0Car@@QEAA@XZ</DECORATED>
+    <FUNCLINE>25</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\</FILEPATH>
+      <FILENAME>car.h</FILENAME>
+      <LINE>67</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function should not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Car::{ctor}</FUNCTION>
+    <DECORATED>??0Car@@QEAA@$$QEAV0@@Z</DECORATED>
+    <FUNCLINE>67</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\</FILEPATH>
+      <FILENAME>car.h</FILENAME>
+      <LINE>76</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function should not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Car::=</FUNCTION>
+    <DECORATED>??4Car@@QEAAAEAV0@$$QEAV0@@Z</DECORATED>
+    <FUNCLINE>76</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\</FILEPATH>
+      <FILENAME>carRepo.h</FILENAME>
+      <LINE>58</LINE>
+      <COLUMN>19</COLUMN>
+    </SFA>
+    <DEFECTCODE>26493</DEFECTCODE>
+    <DESCRIPTION>Don't use C-style casts (type.4).</DESCRIPTION>
+    <FUNCTION>MapRepo::find</FUNCTION>
+    <DECORATED>?find@MapRepo@@UEBA_JAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z</DECORATED>
+    <FUNCLINE>54</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

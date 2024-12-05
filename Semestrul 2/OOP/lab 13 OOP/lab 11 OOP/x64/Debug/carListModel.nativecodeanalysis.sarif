@@ -1,0 +1,214 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26455",
+          "message": {
+            "text": "Default constructor should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/car.h"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Car::{ctor}",
+                  "decoratedName": "??0Car@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26439",
+          "message": {
+            "text": "This kind of function should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/car.h"
+                },
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Car::{ctor}",
+                  "decoratedName": "??0Car@@QEAA@$$QEAV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26439",
+          "message": {
+            "text": "This kind of function should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/car.h"
+                },
+                "region": {
+                  "startLine": 76,
+                  "startColumn": 8
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Car::=",
+                  "decoratedName": "??4Car@@QEAAAEAV0@$$QEAV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26818",
+          "message": {
+            "text": "Switch statement does not cover all cases. Consider adding a 'default' label (es.79)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/carListModel.cpp"
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarListModel::data",
+                  "decoratedName": "?data@CarListModel@@UEBA?AVQVariant@@AEBVQModelIndex@@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26493",
+          "message": {
+            "text": "Don't use C-style casts (type.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/carListModel.cpp"
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 9,
+                  "endLine": 29,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarListModel::rowCount",
+                  "decoratedName": "?rowCount@CarListModel@@UEBAHAEBVQModelIndex@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26818",
+          "message": {
+            "text": "Switch statement does not cover all cases. Consider adding a 'default' label (es.79)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/carListModel.cpp"
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 4
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarListModel::headerData",
+                  "decoratedName": "?headerData@CarListModel@@UEBA?AVQVariant@@HW4Orientation@Qt@@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.39.33523.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/car.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "1f36b3315b5d8c27957145a6a1bcdb64711a9ff658b88a54ecbbfef8371a470e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/carListModel.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "676f5fb447b1d8b894da0bfd8c71759b6c91f0f036c9a5242a9fba3856390b17"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/baroa/onedrive/desktop/lab 13 oop/carlistmodel.h"
+          },
+          "hashes": {
+            "sha-256": "779fbaad9a413ca8334de8d5a0d3dc5e53a739359dbbc82bf9f818ca4ab145a3"
+          }
+        }
+      ]
+    }
+  ]
+}

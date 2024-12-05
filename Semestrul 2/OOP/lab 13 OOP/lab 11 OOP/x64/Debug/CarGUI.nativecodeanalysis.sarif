@@ -1,0 +1,2942 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26455",
+          "message": {
+            "text": "Default constructor should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/car.h"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Car::{ctor}",
+                  "decoratedName": "??0Car@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26439",
+          "message": {
+            "text": "This kind of function should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/car.h"
+                },
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Car::{ctor}",
+                  "decoratedName": "??0Car@@QEAA@$$QEAV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26439",
+          "message": {
+            "text": "This kind of function should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/car.h"
+                },
+                "region": {
+                  "startLine": 76,
+                  "startColumn": 8
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Car::=",
+                  "decoratedName": "??4Car@@QEAAAEAV0@$$QEAV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26493",
+          "message": {
+            "text": "Don't use C-style casts (type.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/carRepo.h"
+                },
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 20,
+                  "endLine": 58,
+                  "endColumn": 25
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "MapRepo::find",
+                  "decoratedName": "?find@MapRepo@@UEBA_JAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26429",
+          "message": {
+            "text": "Symbol 'obs' is never tested for nullness, it can be marked as not_null (f.23)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/observer.h"
+                },
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 14,
+                  "endLine": 28,
+                  "endColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Observable::notify",
+                  "decoratedName": "?notify@Observable@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/washCRUDGUI.h"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 36
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "WashCRUDGUI::{ctor}",
+                  "decoratedName": "??0WashCRUDGUI@@QEAA@AEAVCarService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/washCRUDGUI.h"
+                },
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 41
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "WashCRUDGUI::{ctor}",
+                  "decoratedName": "??0WashCRUDGUI@@QEAA@AEAVCarService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'WashCRUDGUI::main' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/washCRUDGUI.h"
+                },
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "WashCRUDGUI::{ctor}",
+                  "decoratedName": "??0WashCRUDGUI@@QEAA@AEAVCarService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "WashCRUDGUI::main"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'WashCRUDGUI::windowList' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/washCRUDGUI.h"
+                },
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "WashCRUDGUI::{ctor}",
+                  "decoratedName": "??0WashCRUDGUI@@QEAA@AEAVCarService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "WashCRUDGUI::windowList"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'WashCRUDGUI::butonEmptyWash' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/washCRUDGUI.h"
+                },
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "WashCRUDGUI::{ctor}",
+                  "decoratedName": "??0WashCRUDGUI@@QEAA@AEAVCarService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "WashCRUDGUI::butonEmptyWash"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'WashCRUDGUI::butonPopulateWash' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/washCRUDGUI.h"
+                },
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "WashCRUDGUI::{ctor}",
+                  "decoratedName": "??0WashCRUDGUI@@QEAA@AEAVCarService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "WashCRUDGUI::butonPopulateWash"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'WashCRUDGUI::butonAcasa' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/washCRUDGUI.h"
+                },
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "WashCRUDGUI::{ctor}",
+                  "decoratedName": "??0WashCRUDGUI@@QEAA@AEAVCarService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "WashCRUDGUI::butonAcasa"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'WashCRUDGUI::populateWash' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/washCRUDGUI.h"
+                },
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "WashCRUDGUI::{ctor}",
+                  "decoratedName": "??0WashCRUDGUI@@QEAA@AEAVCarService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "WashCRUDGUI::populateWash"
+          }
+        },
+        {
+          "ruleId": "C26432",
+          "message": {
+            "text": "If you define or delete any default operation in the type 'class WashCRUDGUI', define or delete them all (c.21)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/washCRUDGUI.h"
+                },
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 4
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "WashCRUDGUI::{dtor}",
+                  "decoratedName": "??1WashCRUDGUI@@UEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26447",
+          "message": {
+            "text": "The function is declared 'noexcept' but calls function 'removeObserver()' which may throw exceptions (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/washCRUDGUI.h"
+                },
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 4,
+                  "endLine": 53,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "WashCRUDGUI::{dtor}",
+                  "decoratedName": "??1WashCRUDGUI@@UEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 39
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26400",
+          "message": {
+            "text": "Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 39
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 18
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26400",
+          "message": {
+            "text": "Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 18
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 24
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26400",
+          "message": {
+            "text": "Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 24
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 19
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26400",
+          "message": {
+            "text": "Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 19
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 25
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26400",
+          "message": {
+            "text": "Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 25
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 30
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 31
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 19
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26400",
+          "message": {
+            "text": "Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 19
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 25
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26400",
+          "message": {
+            "text": "Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 25
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 20
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 16
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 13
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 19
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26400",
+          "message": {
+            "text": "Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 19
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 56,
+                  "startColumn": 25
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26400",
+          "message": {
+            "text": "Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 56,
+                  "startColumn": 25
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 13
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 32
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 19
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26400",
+          "message": {
+            "text": "Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 19
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 25
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26400",
+          "message": {
+            "text": "Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 25
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 70,
+                  "startColumn": 23
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 19
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 72,
+                  "startColumn": 16
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 73,
+                  "startColumn": 15
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 78,
+                  "startColumn": 32
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 83,
+                  "startColumn": 19
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26400",
+          "message": {
+            "text": "Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 83,
+                  "startColumn": 19
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 22
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26400",
+          "message": {
+            "text": "Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 22
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 18
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26400",
+          "message": {
+            "text": "Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 18
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 86,
+                  "startColumn": 25
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26400",
+          "message": {
+            "text": "Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 86,
+                  "startColumn": 25
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 21
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26400",
+          "message": {
+            "text": "Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 21
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 24
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26400",
+          "message": {
+            "text": "Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 24
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 44
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 95,
+                  "startColumn": 36
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 96,
+                  "startColumn": 41
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 106,
+                  "startColumn": 19
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26400",
+          "message": {
+            "text": "Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 106,
+                  "startColumn": 19
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 25
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26400",
+          "message": {
+            "text": "Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 25
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 109,
+                  "startColumn": 30
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 110,
+                  "startColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 111,
+                  "startColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 112,
+                  "startColumn": 42
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 120,
+                  "startColumn": 19
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26400",
+          "message": {
+            "text": "Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 120,
+                  "startColumn": 19
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 121,
+                  "startColumn": 25
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26400",
+          "message": {
+            "text": "Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 121,
+                  "startColumn": 25
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 124,
+                  "startColumn": 24
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 125,
+                  "startColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 131,
+                  "startColumn": 24
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 138,
+                  "startColumn": 30
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 143,
+                  "startColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 148,
+                  "startColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 153,
+                  "startColumn": 28
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::initGUI",
+                  "decoratedName": "?initGUI@CarGUI@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 231,
+                  "startColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::connectSignalSlots::<lambda_7>::()",
+                  "decoratedName": "??R<lambda_7>@?1??connectSignalSlots@CarGUI@@AEAAXXZ@QEBA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26400",
+          "message": {
+            "text": "Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 231,
+                  "startColumn": 43,
+                  "endLine": 231,
+                  "endColumn": 44
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::connectSignalSlots::<lambda_7>::()",
+                  "decoratedName": "??R<lambda_7>@?1??connectSignalSlots@CarGUI@@AEAAXXZ@QEBA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 242,
+                  "startColumn": 49
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::connectSignalSlots::<lambda_8>::()",
+                  "decoratedName": "??R<lambda_8>@?1??connectSignalSlots@CarGUI@@AEAAXXZ@QEBA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26400",
+          "message": {
+            "text": "Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 242,
+                  "startColumn": 49,
+                  "endLine": 242,
+                  "endColumn": 50
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::connectSignalSlots::<lambda_8>::()",
+                  "decoratedName": "??R<lambda_8>@?1??connectSignalSlots@CarGUI@@AEAAXXZ@QEBA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26496",
+          "message": {
+            "text": "The variable 'nr' does not change after construction, mark it as const (con.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 257,
+                  "startColumn": 8
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::connectSignalSlots::<lambda_10>::()",
+                  "decoratedName": "??R<lambda_10>@?1??connectSignalSlots@CarGUI@@AEAAXXZ@QEBA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26440",
+          "message": {
+            "text": "Function 'CarGUI::sortOrderChanged' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 371,
+                  "startColumn": 14
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::sortOrderChanged",
+                  "decoratedName": "?sortOrderChanged@CarGUI@@AEAAXH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.h"
+                },
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::{ctor}",
+                  "decoratedName": "??0CarGUI@@QEAA@AEAVCarService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.h"
+                },
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::{ctor}",
+                  "decoratedName": "??0CarGUI@@QEAA@AEAVCarService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.h"
+                },
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::{ctor}",
+                  "decoratedName": "??0CarGUI@@QEAA@AEAVCarService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.h"
+                },
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::{ctor}",
+                  "decoratedName": "??0CarGUI@@QEAA@AEAVCarService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.h"
+                },
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 35
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::{ctor}",
+                  "decoratedName": "??0CarGUI@@QEAA@AEAVCarService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.h"
+                },
+                "region": {
+                  "startLine": 56,
+                  "startColumn": 37
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::{ctor}",
+                  "decoratedName": "??0CarGUI@@QEAA@AEAVCarService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.h"
+                },
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 36
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::{ctor}",
+                  "decoratedName": "??0CarGUI@@QEAA@AEAVCarService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.h"
+                },
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 36
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::{ctor}",
+                  "decoratedName": "??0CarGUI@@QEAA@AEAVCarService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.h"
+                },
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 36
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::{ctor}",
+                  "decoratedName": "??0CarGUI@@QEAA@AEAVCarService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.h"
+                },
+                "region": {
+                  "startLine": 63,
+                  "startColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::{ctor}",
+                  "decoratedName": "??0CarGUI@@QEAA@AEAVCarService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.h"
+                },
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 21
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::{ctor}",
+                  "decoratedName": "??0CarGUI@@QEAA@AEAVCarService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.h"
+                },
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::{ctor}",
+                  "decoratedName": "??0CarGUI@@QEAA@AEAVCarService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.h"
+                },
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 36
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::{ctor}",
+                  "decoratedName": "??0CarGUI@@QEAA@AEAVCarService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.h"
+                },
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 36
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::{ctor}",
+                  "decoratedName": "??0CarGUI@@QEAA@AEAVCarService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 398,
+                  "startColumn": 24
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::{ctor}",
+                  "decoratedName": "??0CarGUI@@QEAA@AEAVCarService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+                },
+                "region": {
+                  "startLine": 403,
+                  "startColumn": 32
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CarGUI::{ctor}",
+                  "decoratedName": "??0CarGUI@@QEAA@AEAVCarService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.39.33523.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/car.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "1f36b3315b5d8c27957145a6a1bcdb64711a9ff658b88a54ecbbfef8371a470e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/carRepo.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "0185a7d106aae3b38a70d902464b8663988170512690b4815c5aeb3508a9671d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/observer.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "4a42a4a7324a97b9b7c025d2485eadd650093674e35f50b75233b977039bb9a2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/washCRUDGUI.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "7f312956b188733b6e4aeee77ebbde650e8e38e1bd1f9fb93150cd86105f5ad3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "910f62f3b5945f88ddc17ca74e06eefbee783d0ee1d4aa9b1f4b7b6530cbb7ff"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/CarGUI.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "995c0f375bb6dbf3cc8823a3aaa9b1c8c2eec6f75d94a62df463df77ab307f28"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/baroa/onedrive/desktop/lab 13 oop/carservice.h"
+          },
+          "hashes": {
+            "sha-256": "ec2b65a879a1a7852d95db4d176c3b0d53f49b1962fe2a9cb4bf91321a1083c2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/baroa/onedrive/desktop/lab 13 oop/undo.h"
+          },
+          "hashes": {
+            "sha-256": "fecb972302f600c467c255113750eeb91ad9e8faa057911b1d707bb14411e51b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/baroa/onedrive/desktop/lab 13 oop/washrdonlygui.h"
+          },
+          "hashes": {
+            "sha-256": "8057354b2e265c1063ef71ad2b700a4d6c0da49bbf56cd92ee601bf622bbbe57"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/baroa/onedrive/desktop/lab 13 oop/cartablemodel.h"
+          },
+          "hashes": {
+            "sha-256": "19e7cd61c3e5bdaa70c09f21f6098e8e175078df7ea26bcd7a525fd5b981cdd1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/baroa/onedrive/desktop/lab 13 oop/exception.h"
+          },
+          "hashes": {
+            "sha-256": "c9cc1bb3b011a6f14a520911db7baa06af40d95de3771198499299bd9bc53c29"
+          }
+        }
+      ]
+    }
+  ]
+}

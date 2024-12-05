@@ -1,0 +1,169 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26440",
+          "message": {
+            "text": "Function 'qInitResources_lab11OOP' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/lab 11 OOP/x64/Debug/rcc/qrc_lab11OOP.cpp"
+                },
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "qInitResources_lab11OOP",
+                  "decoratedName": "?qInitResources_lab11OOP@@YAHXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26440",
+          "message": {
+            "text": "Function 'qCleanupResources_lab11OOP' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/lab 11 OOP/x64/Debug/rcc/qrc_lab11OOP.cpp"
+                },
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "qCleanupResources_lab11OOP",
+                  "decoratedName": "?qCleanupResources_lab11OOP@@YAHXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26455",
+          "message": {
+            "text": "Default constructor should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/lab 11 OOP/x64/Debug/rcc/qrc_lab11OOP.cpp"
+                },
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 8
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "`anonymous-namespace'::initializer::{ctor}",
+                  "decoratedName": "??0initializer@?A0x5fb650aa@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26432",
+          "message": {
+            "text": "If you define or delete any default operation in the type 'struct `anonymous-namespace'::initializer', define or delete them all (c.21)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/lab 11 OOP/x64/Debug/rcc/qrc_lab11OOP.cpp"
+                },
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 9
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "`anonymous-namespace'::initializer::{dtor}",
+                  "decoratedName": "??1initializer@?A0x5fb650aa@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26447",
+          "message": {
+            "text": "The function is declared 'noexcept' but calls function 'qCleanupResources_lab11OOP()' which may throw exceptions (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/lab 11 OOP/x64/Debug/rcc/qrc_lab11OOP.cpp"
+                },
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 25,
+                  "endLine": 49,
+                  "endColumn": 76
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "`anonymous-namespace'::initializer::{dtor}",
+                  "decoratedName": "??1initializer@?A0x5fb650aa@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.39.33523.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/lab 11 OOP/x64/Debug/rcc/qrc_lab11OOP.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "f71e291dfc8479d1a8b5b7905dbbf09049d38ee074c8819ccb4ace957a6720e4"
+          }
+        }
+      ]
+    }
+  ]
+}

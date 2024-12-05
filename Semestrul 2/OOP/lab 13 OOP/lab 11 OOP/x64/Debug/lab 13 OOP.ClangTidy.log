@@ -1,0 +1,18 @@
+Error while processing C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\carListModel.cpp.
+Error while processing C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\washCRUDGUI.cpp.
+Error while processing C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\washRDOnlyGUI.cpp.
+Error while processing C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\car.cpp.
+Error while processing C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\CarGUI.cpp.
+Error while processing C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\carRepo.cpp.
+Error while processing C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\carService.cpp.
+Error while processing C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\carValidator.cpp.
+Error while processing C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\main.cpp.
+Error while processing C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\lab 11 OOP\x64\Debug\rcc\qrc_lab11OOP.cpp.
+error: argument unused during compilation: '-Zc:externConstexpr' [clang-diagnostic-unused-command-line-argument]
+error: argument unused during compilation: '-Zc:throwingNew' [clang-diagnostic-unused-command-line-argument]
+Suppressed 295 warnings (295 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+Found compiler error(s).
+C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\washRDOnlyGUI.cpp:30:20: warning: comparison of integers of different signs: 'int' and 'size_type' (aka 'unsigned long long') [clang-diagnostic-sign-compare]
+   30 |         for (int i = 1; i <= cos->service.getWashList().size(); i++)
+      |                         ~ ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

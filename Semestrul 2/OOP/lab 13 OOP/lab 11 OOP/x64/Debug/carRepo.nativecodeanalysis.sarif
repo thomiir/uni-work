@@ -1,0 +1,172 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26455",
+          "message": {
+            "text": "Default constructor should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/car.h"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Car::{ctor}",
+                  "decoratedName": "??0Car@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26439",
+          "message": {
+            "text": "This kind of function should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/car.h"
+                },
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Car::{ctor}",
+                  "decoratedName": "??0Car@@QEAA@$$QEAV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26439",
+          "message": {
+            "text": "This kind of function should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/car.h"
+                },
+                "region": {
+                  "startLine": 76,
+                  "startColumn": 8
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Car::=",
+                  "decoratedName": "??4Car@@QEAAAEAV0@$$QEAV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26493",
+          "message": {
+            "text": "Don't use C-style casts (type.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/carRepo.h"
+                },
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 20,
+                  "endLine": 58,
+                  "endColumn": 25
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "MapRepo::find",
+                  "decoratedName": "?find@MapRepo@@UEBA_JAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.39.33523.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/car.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "1f36b3315b5d8c27957145a6a1bcdb64711a9ff658b88a54ecbbfef8371a470e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/carRepo.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "0185a7d106aae3b38a70d902464b8663988170512690b4815c5aeb3508a9671d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/baroa/onedrive/desktop/lab 13 oop/carrepo.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "f4aa65402e202c46fd4bee08fd39f2253c2407e0060cd88b235578e37cb276ff"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/baroa/onedrive/desktop/lab 13 oop/exception.h"
+          },
+          "hashes": {
+            "sha-256": "c9cc1bb3b011a6f14a520911db7baa06af40d95de3771198499299bd9bc53c29"
+          }
+        }
+      ]
+    }
+  ]
+}

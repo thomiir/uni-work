@@ -1,0 +1,64 @@
+﻿  CarGUI.cpp
+  main.cpp
+C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\lab 11 OOP\observer.h(29,8): error C2660: 'Observer::update': function does not take 0 arguments
+  (compiling source file '../CarGUI.cpp')
+  C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\lab 11 OOP\observer.h(8,16):
+  see declaration of 'Observer::update'
+  C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\lab 11 OOP\observer.h(29,8):
+  while trying to match the argument list '()'
+  
+C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\CarGUI.h(146,4): error C3861: 'reloadList': identifier not found
+  (compiling source file '../CarGUI.cpp')
+  
+C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\CarGUI.cpp(162,14): error C2039: 'reloadList': is not a member of 'CarGUI'
+  C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\CarGUI.h(23,7):
+  see declaration of 'CarGUI'
+  
+C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\CarGUI.cpp(164,2): error C2065: 'table': undeclared identifier
+C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\CarGUI.cpp(165,2): error C2065: 'table': undeclared identifier
+C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\CarGUI.cpp(170,3): error C2065: 'table': undeclared identifier
+C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\CarGUI.cpp(171,3): error C2065: 'table': undeclared identifier
+C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\CarGUI.cpp(172,3): error C2065: 'table': undeclared identifier
+C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\CarGUI.cpp(173,3): error C2065: 'table': undeclared identifier
+C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\CarGUI.cpp(241,10): error C2039: 'reloadList': is not a member of 'CarGUI'
+  C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\CarGUI.h(23,7):
+  see declaration of 'CarGUI'
+  
+C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\CarGUI.cpp(247,10): error C2039: 'reloadList': is not a member of 'CarGUI'
+  C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\CarGUI.h(23,7):
+  see declaration of 'CarGUI'
+  
+C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\lab 11 OOP\observer.h(29,8): error C2660: 'Observer::update': function does not take 0 arguments
+  (compiling source file '../main.cpp')
+  C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\lab 11 OOP\observer.h(8,16):
+  see declaration of 'Observer::update'
+  C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\lab 11 OOP\observer.h(29,8):
+  while trying to match the argument list '()'
+  
+C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\CarGUI.h(146,4): error C3861: 'reloadList': identifier not found
+  (compiling source file '../main.cpp')
+  
+C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\CarGUI.cpp(357,9): error C2039: 'reloadList': is not a member of 'CarGUI'
+  C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\CarGUI.h(23,7):
+  see declaration of 'CarGUI'
+  
+C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\CarGUI.cpp(378,9): error C2039: 'reloadList': is not a member of 'CarGUI'
+  C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\CarGUI.h(23,7):
+  see declaration of 'CarGUI'
+  
+C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\CarGUI.cpp(407,9): error C2039: 'reloadList': is not a member of 'CarGUI'
+  C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\CarGUI.h(23,7):
+  see declaration of 'CarGUI'
+  
+C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\CarGUI.cpp(422,8): error C2039: 'reloadList': is not a member of 'CarGUI'
+  C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\CarGUI.h(23,7):
+  see declaration of 'CarGUI'
+  
+C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\CarGUI.cpp(427,8): error C2039: 'reloadList': is not a member of 'CarGUI'
+  C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\CarGUI.h(23,7):
+  see declaration of 'CarGUI'
+  
+C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\CarGUI.cpp(432,8): error C2039: 'reloadList': is not a member of 'CarGUI'
+  C:\Users\baroa\OneDrive\Desktop\OOP\lab 11 OOP\CarGUI.h(23,7):
+  see declaration of 'CarGUI'
+  

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\</FILEPATH>
+      <FILENAME>car.h</FILENAME>
+      <LINE>25</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor should not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Car::{ctor}</FUNCTION>
+    <DECORATED>??0Car@@QEAA@XZ</DECORATED>
+    <FUNCLINE>25</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\</FILEPATH>
+      <FILENAME>car.h</FILENAME>
+      <LINE>67</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function should not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Car::{ctor}</FUNCTION>
+    <DECORATED>??0Car@@QEAA@$$QEAV0@@Z</DECORATED>
+    <FUNCLINE>67</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\</FILEPATH>
+      <FILENAME>car.h</FILENAME>
+      <LINE>76</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function should not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Car::=</FUNCTION>
+    <DECORATED>??4Car@@QEAAAEAV0@$$QEAV0@@Z</DECORATED>
+    <FUNCLINE>76</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\</FILEPATH>
+      <FILENAME>carListModel.cpp</FILENAME>
+      <LINE>12</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26818</DEFECTCODE>
+    <DESCRIPTION>Switch statement does not cover all cases. Consider adding a 'default' label (es.79).</DESCRIPTION>
+    <FUNCTION>CarListModel::data</FUNCTION>
+    <DECORATED>?data@CarListModel@@UEBA?AVQVariant@@AEBVQModelIndex@@H@Z</DECORATED>
+    <FUNCLINE>6</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\</FILEPATH>
+      <FILENAME>carListModel.cpp</FILENAME>
+      <LINE>29</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26493</DEFECTCODE>
+    <DESCRIPTION>Don't use C-style casts (type.4).</DESCRIPTION>
+    <FUNCTION>CarListModel::rowCount</FUNCTION>
+    <DECORATED>?rowCount@CarListModel@@UEBAHAEBVQModelIndex@@@Z</DECORATED>
+    <FUNCLINE>27</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\</FILEPATH>
+      <FILENAME>carListModel.cpp</FILENAME>
+      <LINE>42</LINE>
+      <COLUMN>3</COLUMN>
+    </SFA>
+    <DEFECTCODE>26818</DEFECTCODE>
+    <DESCRIPTION>Switch statement does not cover all cases. Consider adding a 'default' label (es.79).</DESCRIPTION>
+    <FUNCTION>CarListModel::headerData</FUNCTION>
+    <DECORATED>?headerData@CarListModel@@UEBA?AVQVariant@@HW4Orientation@Qt@@H@Z</DECORATED>
+    <FUNCLINE>36</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

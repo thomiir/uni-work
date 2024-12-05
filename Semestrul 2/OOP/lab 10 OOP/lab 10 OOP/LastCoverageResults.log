@@ -1,0 +1,22 @@
+[2024-04-29 20:02:14] [info] Start Program:
+Path:"C:\Users\baroa\OneDrive\Desktop\New folder\lab 10 OOP\x64\Debug\lab 10 OOP.exe"
+Arguments:
+Working directory: "C:\Users\baroa\OneDrive\Desktop\New folder\lab 10 OOP\lab 10 OOP\"
+Modules: Selected: C:\Users\baroa\OneDrive\Desktop\New folder\lab 10 OOP\x64\Debug\lab 10 OOP.exe Excluded: 
+Sources: Selected: C:\Users\baroa\OneDrive\Desktop\New folder\lab 10 OOP Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\baroa\AppData\Local\Temp\wuxzhneb.34c 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2024-04-29 20:02:14] [info] Module: C:\Users\baroa\OneDrive\Desktop\New folder\lab 10 OOP\x64\Debug\lab 10 OOP.exe is selected because it matches selected pattern: C:\Users\baroa\OneDrive\Desktop\New folder\lab 10 OOP\x64\Debug\lab 10 OOP.exe
+[2024-04-29 20:03:11] [info] ----------------------------------------------------
+[2024-04-29 20:03:11] [info] Coverage binary generated in file: C:\Users\baroa\AppData\Local\Temp\wuxzhneb.34c
+[2024-04-29 20:03:11] [info] ----------------------------------------------------
+[2024-04-29 20:03:11] [error] Your program stop with error code: 1

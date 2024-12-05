@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\</FILEPATH>
+      <FILENAME>car.h</FILENAME>
+      <LINE>25</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor should not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Car::{ctor}</FUNCTION>
+    <DECORATED>??0Car@@QEAA@XZ</DECORATED>
+    <FUNCLINE>25</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\</FILEPATH>
+      <FILENAME>car.h</FILENAME>
+      <LINE>67</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function should not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Car::{ctor}</FUNCTION>
+    <DECORATED>??0Car@@QEAA@$$QEAV0@@Z</DECORATED>
+    <FUNCLINE>67</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\</FILEPATH>
+      <FILENAME>car.h</FILENAME>
+      <LINE>76</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>26439</DEFECTCODE>
+    <DESCRIPTION>This kind of function should not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Car::=</FUNCTION>
+    <DECORATED>??4Car@@QEAAAEAV0@$$QEAV0@@Z</DECORATED>
+    <FUNCLINE>76</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\</FILEPATH>
+      <FILENAME>carRepo.h</FILENAME>
+      <LINE>58</LINE>
+      <COLUMN>19</COLUMN>
+    </SFA>
+    <DEFECTCODE>26493</DEFECTCODE>
+    <DESCRIPTION>Don't use C-style casts (type.4).</DESCRIPTION>
+    <FUNCTION>MapRepo::find</FUNCTION>
+    <DECORATED>?find@MapRepo@@UEBA_JAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z</DECORATED>
+    <FUNCLINE>54</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\</FILEPATH>
+      <FILENAME>observer.h</FILENAME>
+      <LINE>28</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>26429</DEFECTCODE>
+    <DESCRIPTION>Symbol 'obs' is never tested for nullness, it can be marked as not_null (f.23).</DESCRIPTION>
+    <FUNCTION>Observable::notify</FUNCTION>
+    <DECORATED>?notify@Observable@@QEAAXXZ</DECORATED>
+    <FUNCLINE>26</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\</FILEPATH>
+      <FILENAME>washCRUDGUI.h</FILENAME>
+      <LINE>26</LINE>
+      <COLUMN>35</COLUMN>
+    </SFA>
+    <DEFECTCODE>26409</DEFECTCODE>
+    <DESCRIPTION>Avoid calling new and delete explicitly, use std::make_unique&lt;T&gt; instead (r.11).</DESCRIPTION>
+    <FUNCTION>WashCRUDGUI::{ctor}</FUNCTION>
+    <DECORATED>??0WashCRUDGUI@@QEAA@AEAVCarService@@@Z</DECORATED>
+    <FUNCLINE>50</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\</FILEPATH>
+      <FILENAME>washCRUDGUI.h</FILENAME>
+      <LINE>27</LINE>
+      <COLUMN>40</COLUMN>
+    </SFA>
+    <DEFECTCODE>26409</DEFECTCODE>
+    <DESCRIPTION>Avoid calling new and delete explicitly, use std::make_unique&lt;T&gt; instead (r.11).</DESCRIPTION>
+    <FUNCTION>WashCRUDGUI::{ctor}</FUNCTION>
+    <DECORATED>??0WashCRUDGUI@@QEAA@AEAVCarService@@@Z</DECORATED>
+    <FUNCLINE>50</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\</FILEPATH>
+      <FILENAME>washCRUDGUI.h</FILENAME>
+      <LINE>50</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'WashCRUDGUI::main' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>WashCRUDGUI::{ctor}</FUNCTION>
+    <DECORATED>??0WashCRUDGUI@@QEAA@AEAVCarService@@@Z</DECORATED>
+    <FUNCLINE>50</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>WashCRUDGUI::main</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\</FILEPATH>
+      <FILENAME>washCRUDGUI.h</FILENAME>
+      <LINE>50</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'WashCRUDGUI::windowList' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>WashCRUDGUI::{ctor}</FUNCTION>
+    <DECORATED>??0WashCRUDGUI@@QEAA@AEAVCarService@@@Z</DECORATED>
+    <FUNCLINE>50</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>WashCRUDGUI::windowList</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\</FILEPATH>
+      <FILENAME>washCRUDGUI.h</FILENAME>
+      <LINE>50</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'WashCRUDGUI::butonAcasa' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>WashCRUDGUI::{ctor}</FUNCTION>
+    <DECORATED>??0WashCRUDGUI@@QEAA@AEAVCarService@@@Z</DECORATED>
+    <FUNCLINE>50</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>WashCRUDGUI::butonAcasa</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\</FILEPATH>
+      <FILENAME>washCRUDGUI.h</FILENAME>
+      <LINE>50</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'WashCRUDGUI::butonPopulateWash' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>WashCRUDGUI::{ctor}</FUNCTION>
+    <DECORATED>??0WashCRUDGUI@@QEAA@AEAVCarService@@@Z</DECORATED>
+    <FUNCLINE>50</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>WashCRUDGUI::butonPopulateWash</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\</FILEPATH>
+      <FILENAME>washCRUDGUI.h</FILENAME>
+      <LINE>50</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'WashCRUDGUI::butonEmptyWash' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>WashCRUDGUI::{ctor}</FUNCTION>
+    <DECORATED>??0WashCRUDGUI@@QEAA@AEAVCarService@@@Z</DECORATED>
+    <FUNCLINE>50</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>WashCRUDGUI::butonEmptyWash</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\</FILEPATH>
+      <FILENAME>washCRUDGUI.h</FILENAME>
+      <LINE>50</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'WashCRUDGUI::populateWash' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>WashCRUDGUI::{ctor}</FUNCTION>
+    <DECORATED>??0WashCRUDGUI@@QEAA@AEAVCarService@@@Z</DECORATED>
+    <FUNCLINE>50</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>WashCRUDGUI::populateWash</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\</FILEPATH>
+      <FILENAME>washCRUDGUI.h</FILENAME>
+      <LINE>51</LINE>
+      <COLUMN>3</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class WashCRUDGUI', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>WashCRUDGUI::{dtor}</FUNCTION>
+    <DECORATED>??1WashCRUDGUI@@UEAA@XZ</DECORATED>
+    <FUNCLINE>51</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\</FILEPATH>
+      <FILENAME>washCRUDGUI.h</FILENAME>
+      <LINE>53</LINE>
+      <COLUMN>25</COLUMN>
+    </SFA>
+    <DEFECTCODE>26447</DEFECTCODE>
+    <DESCRIPTION>The function is declared 'noexcept' but calls function 'removeObserver()' which may throw exceptions (f.6).</DESCRIPTION>
+    <FUNCTION>WashCRUDGUI::{dtor}</FUNCTION>
+    <DECORATED>??1WashCRUDGUI@@UEAA@XZ</DECORATED>
+    <FUNCLINE>51</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\</FILEPATH>
+      <FILENAME>washRDOnlyGUI.cpp</FILENAME>
+      <LINE>15</LINE>
+      <COLUMN>23</COLUMN>
+    </SFA>
+    <DEFECTCODE>26409</DEFECTCODE>
+    <DESCRIPTION>Avoid calling new and delete explicitly, use std::make_unique&lt;T&gt; instead (r.11).</DESCRIPTION>
+    <FUNCTION>WashRDOnlyGUI::build_UI</FUNCTION>
+    <DECORATED>?build_UI@WashRDOnlyGUI@@QEAAXXZ</DECORATED>
+    <FUNCLINE>12</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\</FILEPATH>
+      <FILENAME>washRDOnlyGUI.cpp</FILENAME>
+      <LINE>15</LINE>
+      <COLUMN>23</COLUMN>
+    </SFA>
+    <DEFECTCODE>26400</DEFECTCODE>
+    <DESCRIPTION>Do not assign the result of an allocation or a function call with an owner&lt;T&gt; return value to a raw pointer, use owner&lt;T&gt; instead (i.11).</DESCRIPTION>
+    <FUNCTION>WashRDOnlyGUI::build_UI</FUNCTION>
+    <DECORATED>?build_UI@WashRDOnlyGUI@@QEAAXXZ</DECORATED>
+    <FUNCLINE>12</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\</FILEPATH>
+      <FILENAME>washRDOnlyGUI.cpp</FILENAME>
+      <LINE>93</LINE>
+      <COLUMN>16</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class WashRDOnlyGUI', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>WashRDOnlyGUI::{dtor}</FUNCTION>
+    <DECORATED>??1WashRDOnlyGUI@@UEAA@XZ</DECORATED>
+    <FUNCLINE>93</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\baroa\OneDrive\Desktop\lab 13 OOP\</FILEPATH>
+      <FILENAME>washRDOnlyGUI.cpp</FILENAME>
+      <LINE>95</LINE>
+      <COLUMN>28</COLUMN>
+    </SFA>
+    <DEFECTCODE>26447</DEFECTCODE>
+    <DESCRIPTION>The function is declared 'noexcept' but calls function 'removeObserver()' which may throw exceptions (f.6).</DESCRIPTION>
+    <FUNCTION>WashRDOnlyGUI::{dtor}</FUNCTION>
+    <DECORATED>??1WashRDOnlyGUI@@UEAA@XZ</DECORATED>
+    <FUNCLINE>93</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

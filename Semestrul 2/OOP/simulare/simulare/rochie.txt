@@ -1,0 +1,10 @@
+1,denum1,marime1,200,true
+2,denum2,marime2,300,false
+3,denum3,marime3,100,true
+4,denum4,marime4,500,true
+5,denum5,marime5,950,true
+6,denum6,marime6,800,false
+7,denum7,marime7,740,false
+8,denum8,marime8,200,false
+9,denum9,marime9,130,true
+10,denum10,marime10,510,false

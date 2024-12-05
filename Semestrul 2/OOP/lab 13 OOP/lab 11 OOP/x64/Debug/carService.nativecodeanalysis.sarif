@@ -1,0 +1,235 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26455",
+          "message": {
+            "text": "Default constructor should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/car.h"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Car::{ctor}",
+                  "decoratedName": "??0Car@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26439",
+          "message": {
+            "text": "This kind of function should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/car.h"
+                },
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Car::{ctor}",
+                  "decoratedName": "??0Car@@QEAA@$$QEAV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26439",
+          "message": {
+            "text": "This kind of function should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/car.h"
+                },
+                "region": {
+                  "startLine": 76,
+                  "startColumn": 8
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Car::=",
+                  "decoratedName": "??4Car@@QEAAAEAV0@$$QEAV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26493",
+          "message": {
+            "text": "Don't use C-style casts (type.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/carRepo.h"
+                },
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 20,
+                  "endLine": 58,
+                  "endColumn": 25
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "MapRepo::find",
+                  "decoratedName": "?find@MapRepo@@UEBA_JAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26429",
+          "message": {
+            "text": "Symbol 'obs' is never tested for nullness, it can be marked as not_null (f.23)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/observer.h"
+                },
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 14,
+                  "endLine": 28,
+                  "endColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Observable::notify",
+                  "decoratedName": "?notify@Observable@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.39.33523.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/car.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "1f36b3315b5d8c27957145a6a1bcdb64711a9ff658b88a54ecbbfef8371a470e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/carRepo.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "0185a7d106aae3b38a70d902464b8663988170512690b4815c5aeb3508a9671d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/baroa/OneDrive/Desktop/lab 13 OOP/observer.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "4a42a4a7324a97b9b7c025d2485eadd650093674e35f50b75233b977039bb9a2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/baroa/onedrive/desktop/lab 13 oop/carservice.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "4046fe4bd04b14b7a6d4e7d2af5efc94c50348126864f87a3e42b3a07ecaf23a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/baroa/onedrive/desktop/lab 13 oop/carservice.h"
+          },
+          "hashes": {
+            "sha-256": "ec2b65a879a1a7852d95db4d176c3b0d53f49b1962fe2a9cb4bf91321a1083c2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/baroa/onedrive/desktop/lab 13 oop/undo.h"
+          },
+          "hashes": {
+            "sha-256": "fecb972302f600c467c255113750eeb91ad9e8faa057911b1d707bb14411e51b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/baroa/onedrive/desktop/lab 13 oop/carvalidator.h"
+          },
+          "hashes": {
+            "sha-256": "db3f098bf514c308ae88ee446ff8d44d4dbae2e7fdfc1f7d2ee698e57dead4f1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/baroa/onedrive/desktop/lab 13 oop/exception.h"
+          },
+          "hashes": {
+            "sha-256": "c9cc1bb3b011a6f14a520911db7baa06af40d95de3771198499299bd9bc53c29"
+          }
+        }
+      ]
+    }
+  ]
+}
