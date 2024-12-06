@@ -20,14 +20,12 @@ public static class Start
     public static void Main()
     {
         var messageTasks = CreateMessages();
-        foreach (var messageTask in messageTasks)
-            Console.WriteLine(messageTask);
         const Strategy strategy = Strategy.Lifo;
         var strategyTaskRunner = new StrategyTaskRunner(strategy);
         foreach (var message in messageTasks)
             strategyTaskRunner.AddTask(message);
-        var printerTaskRunner = new PrinterTaskRunner(strategyTaskRunner);
-        printerTaskRunner.ExecuteAll();
+        var delayTaskRunner = new DelayTaskRunner(strategyTaskRunner);
+        delayTaskRunner.ExecuteAll();
     }
 }
     

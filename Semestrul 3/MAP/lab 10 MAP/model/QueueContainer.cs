@@ -4,15 +4,15 @@ public class QueueContainer : AbstractContainer
 {
     public override Task Remove()
     {
-        if (_tasks.Count == 0)
+        if (IsEmpty())
             return null!;
-        var task = _tasks[0];
-        _tasks.RemoveAt(0);
+        var task = Tasks[0];
+        Tasks.RemoveAt(0);
         return task;
     }
 
     public override void Add(Task task)
     {
-        _tasks.Add(task);
+        Tasks.Add(task);
     }
 }

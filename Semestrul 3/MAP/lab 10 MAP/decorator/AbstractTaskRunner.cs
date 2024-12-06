@@ -1,14 +1,14 @@
 ﻿namespace seminar10.decorator;
 using model;
 
-public class AbstractTaskRunner(ITaskRunner taskRunner) : ITaskRunner
+public abstract class AbstractTaskRunner(ITaskRunner taskRunner) : ITaskRunner
 {
     public virtual void ExecuteOneTask()
     {
         taskRunner.ExecuteOneTask();
     }
 
-    public void ExecuteAll()
+    public virtual void ExecuteAll()
     {
         while (HasTask())
         {
@@ -16,12 +16,12 @@ public class AbstractTaskRunner(ITaskRunner taskRunner) : ITaskRunner
         }
     }
 
-    public void AddTask(Task t)
+    public virtual void AddTask(Task t)
     {
         taskRunner.AddTask(t);
     }
 
-    public bool HasTask()
+    public virtual bool HasTask()
     {
         return taskRunner.HasTask();
     }

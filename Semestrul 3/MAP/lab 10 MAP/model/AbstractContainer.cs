@@ -2,7 +2,7 @@
 
 public abstract class AbstractContainer : IContainer
 {
-    protected readonly List<Task> _tasks = [];
+    protected readonly List<Task> Tasks = [];
 
     public abstract Task Remove();
 
@@ -10,11 +10,11 @@ public abstract class AbstractContainer : IContainer
 
     public int Size()
     {
-        return _tasks.Count;
+        return Tasks.Count;
     }
 
     public bool IsEmpty()
     {
-        return _tasks.Count == 0;
+        return Tasks.Count == 0;
     }
 }

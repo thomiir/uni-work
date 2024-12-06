@@ -1,6 +1,4 @@
-﻿using seminar10.model;
-
-namespace seminar10.decorator;
+﻿namespace seminar10.decorator;
 using factory;
 using model;
 
@@ -27,6 +25,6 @@ public class StrategyTaskRunner(Strategy strategy) : ITaskRunner
 
     public bool HasTask()
     {
-        return _container.IsEmpty();
+        return !_container.IsEmpty();
     }
 }

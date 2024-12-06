@@ -11,4 +11,12 @@ public class PrinterTaskRunner(ITaskRunner taskRunner) : AbstractTaskRunner(task
         base.ExecuteOneTask();
         Console.WriteLine("Task executed at: " + DateTime.Now.ToString(DateTimeFormat));
     }
+
+    public override void ExecuteAll()
+    {
+        while (HasTask())
+        {
+            ExecuteOneTask();
+        }
+    }
 }
