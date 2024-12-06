@@ -1,0 +1,14 @@
+C:\Users\baroa\RiderProjects\seminar10\seminar10\bin\Debug\net9.0\seminar10.exe
+C:\Users\baroa\RiderProjects\seminar10\seminar10\bin\Debug\net9.0\seminar10.deps.json
+C:\Users\baroa\RiderProjects\seminar10\seminar10\bin\Debug\net9.0\seminar10.runtimeconfig.json
+C:\Users\baroa\RiderProjects\seminar10\seminar10\bin\Debug\net9.0\seminar10.dll
+C:\Users\baroa\RiderProjects\seminar10\seminar10\bin\Debug\net9.0\seminar10.pdb
+C:\Users\baroa\RiderProjects\seminar10\seminar10\obj\Debug\net9.0\seminar10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\baroa\RiderProjects\seminar10\seminar10\obj\Debug\net9.0\seminar10.AssemblyInfoInputs.cache
+C:\Users\baroa\RiderProjects\seminar10\seminar10\obj\Debug\net9.0\seminar10.AssemblyInfo.cs
+C:\Users\baroa\RiderProjects\seminar10\seminar10\obj\Debug\net9.0\seminar10.csproj.CoreCompileInputs.cache
+C:\Users\baroa\RiderProjects\seminar10\seminar10\obj\Debug\net9.0\seminar10.dll
+C:\Users\baroa\RiderProjects\seminar10\seminar10\obj\Debug\net9.0\refint\seminar10.dll
+C:\Users\baroa\RiderProjects\seminar10\seminar10\obj\Debug\net9.0\seminar10.pdb
+C:\Users\baroa\RiderProjects\seminar10\seminar10\obj\Debug\net9.0\seminar10.genruntimeconfig.cache
+C:\Users\baroa\RiderProjects\seminar10\seminar10\obj\Debug\net9.0\ref\seminar10.dll
