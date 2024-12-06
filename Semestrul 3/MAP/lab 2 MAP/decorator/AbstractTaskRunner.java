@@ -4,7 +4,7 @@ import sem1_2.model.Task;
 
 //abstract decorator
 public abstract class AbstractTaskRunner implements TaskRunner {
-    private TaskRunner taskRunner;
+    private final TaskRunner taskRunner;
 
     public AbstractTaskRunner(TaskRunner taskRunner) {
         this.taskRunner = taskRunner;

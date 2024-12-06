@@ -1,12 +1,12 @@
 package sem1_2;
 
-import sem1_2.decorator.PrinterTaskRunner;
-import sem1_2.decorator.StrategyTaskRunner;
-import sem1_2.decorator.TaskRunner;
+import sem1_2.decorator.*;
 import sem1_2.factory.Strategy;
 import sem1_2.model.MessageTask;
 
 import java.time.LocalDateTime;
+import java.util.Arrays;
+import java.util.stream.StreamSupport;
 
 public class Sem1_2Test {
     public static MessageTask[] createMessages() {
@@ -22,17 +22,13 @@ public class Sem1_2Test {
 
     public static void main(String[] args) {
         MessageTask[] messageTasks = createMessages();
-        for (MessageTask messageTask: messageTasks) {
-            System.out.println(messageTask);
-        }
-
         TaskRunner strategyTaskRunner = new StrategyTaskRunner(Strategy.valueOf(args[0]));
         for (MessageTask m : messageTasks) {
             strategyTaskRunner.addTask(m);
         }
         // t.executeAll();
 
-        TaskRunner printerTaskRunner = new PrinterTaskRunner(strategyTaskRunner);
-        printerTaskRunner.executeAll();
+        TaskRunner delayTaskRunner = new DelayTaskRunner(strategyTaskRunner);
+        delayTaskRunner.executeAll();
     }
 }

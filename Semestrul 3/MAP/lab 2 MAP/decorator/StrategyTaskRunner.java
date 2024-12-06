@@ -7,7 +7,7 @@ import sem1_2.factory.Strategy;
 
 public class StrategyTaskRunner implements TaskRunner {
 
-    private Container container;
+    private final Container container;
 
     public StrategyTaskRunner(Strategy strategy) {
         container = new TaskContainerFactory().createContainer(strategy);

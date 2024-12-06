@@ -1,8 +1,5 @@
 package sem1_2.model;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class QueueContainer extends AbstractContainer {
 
     @Override
@@ -16,7 +13,7 @@ public class QueueContainer extends AbstractContainer {
 
     @Override
     public void add(Task task) {
-        tasks.addLast(task);
+        tasks.add(task);
     }
 
 }

@@ -1,12 +1,7 @@
 package sem1_2.model;
 
-import java.util.ArrayList;
-import java.util.List;
-import sem1_2.model.AbstractContainer;
 
 public class StackContainer extends AbstractContainer {
-
-    List<Task> tasks = new ArrayList<>();
 
     @Override
     public Task remove() {

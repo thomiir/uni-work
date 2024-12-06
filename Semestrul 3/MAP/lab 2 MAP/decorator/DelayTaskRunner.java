@@ -17,4 +17,10 @@ public class DelayTaskRunner extends AbstractTaskRunner{
         }
 
     }
+
+    @Override
+    public void executeAll() {
+        while (super.hasTask())
+            executeOneTask();
+    }
 }
