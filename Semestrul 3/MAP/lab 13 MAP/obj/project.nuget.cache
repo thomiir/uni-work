@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "p0jTSSZLWFM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\baroa\\RiderProjects\\lab13-MAP\\lab13-MAP\\lab13-MAP.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\baroa\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\baroa\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\baroa\\.nuget\\packages\\npgsql\\9.0.2\\npgsql.9.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
