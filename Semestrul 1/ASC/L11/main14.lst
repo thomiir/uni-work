@@ -1,0 +1,40 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit, printf, scanf, modul14
+     8                                  import printf msvcrt.dll    ; tell the assembler that function printf is found in msvcrt.dll library
+     9                                  import scanf msvcrt.dll     ; similar for scanf
+    10                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+    11                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    12                                  
+    13                                  segment data use32 class=data
+    14 00000000 <res 00000020>          	numar resb 32
+    15 00000020 257300                  	format_citire db "%s", 0
+    16 00000023 256F0A0D00              	format_afisare db "%o", 10, 13, 0
+    17                                  ; Se citesc mai multe numere de la tastatura, in baza 2. Sa se afiseze aceste numere in baza 8.
+    18                                  segment code use32 class=code
+    19                                      start:
+    20 00000000 68[00000000]            			push numar           ; punem pe stiva adresa variabilei numar - in care se va citi de la tastatura 
+    21 00000005 68[20000000]            			push format_citire   ; punem pe stiva adresa formatului de citire - tip string
+    22 0000000A FF15[00000000]          			call [scanf]         ; apelam functia de citire
+    23 00000010 83C408                  			add esp, 4 * 2       ; refacem pointerul esp
+    24                                  			
+    25 00000013 68[00000000]            			push numar           ; punem pe stiva adresa variabilei numar (parametrul)
+    26 00000018 E8(00000000)            			call modul14         ; apelam modulul extern
+    27                                              
+    28 0000001D 83FA00                              cmp edx, 0           ; comparam registrul edx - in care este salvat rezultatul - cu 0
+    29 00000020 7411                                jz final             ; daca este egal, sarim la eticheta final
+    30                                  			
+    31 00000022 52                      			push edx             ; punem pe stiva valoarea registrului edx
+    32 00000023 68[23000000]            			push format_afisare  ; punem pe stiva adresa formatului de afisare - tip octal
+    33 00000028 FF15[00000000]          			call [printf]        ; apelam functia de afisare
+    34 0000002E 83C408                  			add esp, 4 * 2       ; refacem pointerul esp
+    35 00000031 EBCD                    			jmp start            ; ne intoarcem la eticheta start si repetam citirea
+    36                                  	
+    37                                          
+    38                                      final:                       ; oprim executia programului
+    39 00000033 6A00                                push    dword 0      ; push the parameter for exit onto the stack
+    40 00000035 FF15[00000000]                      call    [exit]       ; call exit to terminate the program

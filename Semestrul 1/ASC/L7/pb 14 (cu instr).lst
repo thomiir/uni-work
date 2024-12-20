@@ -1,0 +1,83 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  segment data use32 class=data
+    13 00000000 07563412F53C2B1A            s dd 12345607h, 1A2B3CF5h
+    14                                      len equ $-s 
+    15                                      d times len resb 0
+    16                                  
+    17                                  segment code use32 class=code
+    18                                      start:
+    19 00000000 FC                          cld                       ; setam direction flag la 0 ca sa parcurgem s de la 0 la len(s) - 1
+    20                                      
+    21 00000001 B801000000                  mov eax, 1                ; folosim registrul eax pe post de variabila logica
+    22                                      
+    23 00000006 B907000000                  mov ecx, len-1            ; folosim registrul ecx pe post de contor pentru parcurgerea, 
+    24                                                                ; compararea si interschimbarea elementelor
+    25                                      
+    26 0000000B BE[00000000]                mov esi, s                ; punem in registrul esi adresa primului element din s
+    27                                      
+    28 00000010 BF[01000000]                mov edi, s+1              ; punem in registrul edi adresa celui de-al doilea element din s
+    29                                      
+    30 00000015 E32C                        jecxz sfarsit             ; sarim la sfarsit daca ecx = 0
+    31                                     
+    32                                      compara: 
+    33 00000017 A6                              cmpsb                 ; comparam elementele de la adresele ds : esi, es : edi
+    34                                          
+    35 00000018 7611                            jna nu_mai_mare       ; sarim peste daca valoarea de la adresa ds : esi este mai mica 
+    36                                                                ; decat valoarea de la adresa es : edi
+    37                                              
+    38 0000001A 4E                                  dec esi           ; scadem esi cu o unitate deoarece instructiunea cmpsb a modificat pointer-ul
+    39                                              
+    40 0000001B 4F                                  dec edi           ; scadem edi cu o unitate deoarece instructiunea cmpsb a modificat pointer-ul
+    41                                              
+    42 0000001C 50                                  push eax          ; il punem pe eax pe stiva
+    43                                              
+    44 0000001D 8A07                                mov al, [edi]     ; in al punem valoarea de la adresa es : edi 
+    45                                              
+    46 0000001F A4                                  movsb             ; la adresa es : edi incarcam octetul de la adresa ds : esi
+    47                                              
+    48 00000020 4E                                  dec esi           ; mutam pointer-ul esi la loc
+    49                                              
+    50 00000021 83EF02                              sub edi, 2        ; mutam pointer-ul edi la loc
+    51                                              
+    52 00000024 AA                                  stosb             ; la adresa es : edi incarcam octetul din al; deoarece pe edi l-am scazut cu doua unitati,
+    53                                                                ; el practic a devenit esi (esi = edi + 1)
+    54                                                                ; tot in stosb, esi = esi + 1, edi = edi + 1 si trecem la urmatoarea comparatie
+    55                                              
+    56 00000025 58                                  pop eax           ; il scoatem pe eax de pe stiva
+    57                                              
+    58 00000026 B800000000                          mov eax, 0        ; eax = 0 (am efectuat o interschimbare)
+    59                                              
+    60                                          nu_mai_mare:          ; daca s-a efectuat jump-ul, trecem la urmatoarea iteratie
+    61                                          
+    62 0000002B E2EA                        loop compara              ; executam de ecx ori
+    63                                      
+    64 0000002D 83F800                      cmp eax, 0                ; verificam daca eax = 0 (s-a efectuat o interschimbare la ultima iteratie, 
+    65                                                                ; in caz afirmativ, o luam de la inceput, altfel programul se opreste)
+    66 00000030 74CE                        je start                  
+    67                                       
+    68                                      
+    69 00000032 B908000000                  mov ecx, len              ; mutam in ecx lungimea sirului d
+    70                                      
+    71 00000037 BE[00000000]                mov esi, s                ; mutam in esi adresa primului element din s
+    72                                      
+    73 0000003C BF[08000000]                mov edi, d                ; mutam in edi adresa primului element din d
+    74                                      
+    75 00000041 F2A4                        repnz movsb               ; cat timp mai avem elemente de mutat, la adresa ds : esi mutam octetul 
+    76                                                                ; de la adresa es : edi 
+    77                                                                 
+    78                                  
+    79                                  
+    80                                       
+    81                                      sfarsit:
+    82 00000043 6A00                        push    dword 0      ; push the parameter for exit onto the stack
+    83 00000045 FF15[00000000]              call    [exit]       ; call exit to terminate the program

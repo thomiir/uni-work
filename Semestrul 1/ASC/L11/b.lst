@@ -1,0 +1,36 @@
+     1                                  bits 32
+     2                                  global procedura
+     3                                  extern printf
+     4                                  import printf msvcrt.dll
+     5                                  segment data use32 public data
+     6 00000000 257800                      format db "%x", 0
+     7                                  segment code use32 public code
+     8                                      procedura:
+     9                                      
+    10 00000000 8B742404                        mov esi, [esp + 4] ; adresa sirului dat ca parametru
+    11 00000004 8B4C2408                        mov ecx, [esp + 8] ; lungimea sirului dat ca parametru
+    12                                          
+    13                                          repeta:
+    14 00000008 AD                                  lodsd ; incarcam in eax un element din sirul dat
+    15 00000009 51                                  push ecx
+    16 0000000A B904000000                          mov ecx, 4
+    17                                              repeta2:
+    18 0000000F 51                                      push ecx
+    19 00000010 B908000000                              mov ecx, 8
+    20 00000015 F8                                      clc
+    21                                                  repeta3:
+    22 00000016 D1D8                                        rcr eax, 1
+    23 00000018 83D300                                      adc ebx, 0
+    24 0000001B D1E3                                        sal ebx, 1
+    25 0000001D E2F7                                    loop repeta3
+    26 0000001F D1FB                                    sar ebx, 1
+    27 00000021 59                                      pop ecx
+    28 00000022 53                                      push ebx
+    29 00000023 68[00000000]                            push format
+    30 00000028 FF15[00000000]                          call [printf]
+    31 0000002E 83C408                                  add esp, 8
+    32 00000031 E2DC                                loop repeta2
+    33 00000033 59                                  pop ecx
+    34 00000034 E2D2                           loop repeta
+    35                                  
+    36 00000036 C3                             ret

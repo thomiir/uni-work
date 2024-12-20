@@ -1,0 +1,5 @@
+cd C:\Users\alex\OneDrive\Desktop\lab 11 asc
+nasm -f obj main14.asm
+nasm -f obj modul14.asm
+alink modul14.obj main14.obj -oPE -subsys console -entry start
+modul14.exe

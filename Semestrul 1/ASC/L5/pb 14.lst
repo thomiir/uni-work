@@ -1,0 +1,47 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  segment data use32 class=data
+    13 00000000 0103FEFB03F80500            S db 1, 3, -2, -5, 3 ,-8, 5, 0
+    14                                      lungime equ $-S
+    15 00000008 00<rept>                    D1 times lungime db 0
+    16 00000010 00<rept>                    D2 times lungime db 0
+    17                                  
+    18                                  ; our code starts here
+    19                                  segment code use32 class=code
+    20                                      start:
+    21 00000000 B908000000                      mov ecx, lungime
+    22 00000005 BE00000000                      mov esi, 0
+    23 0000000A B800000000                      mov eax, 0   ; lungimea sirului D1 - contine numerele pozitive (si 0)
+    24 0000000F BB00000000                      mov ebx, 0   ; lungimea sirului D2 - contine numerele negative
+    25 00000014 E31E                            jecxz sfarsit
+    26                                          repeta:
+    27 00000016 8A96[00000000]                      mov dl, [S+esi]
+    28 0000001C 80FA00                              cmp dl, 0             ; scadere fictiva dl - 0, daca dl>=0 atunci punem valoarea in D1, altfel o punem in D2
+    29 0000001F 7D09                                jge muta_D1           ; (mai mare sau egal decat 0)
+    30                                                  
+    31                                                  ;daca este mai mic decat 0
+    32 00000021 8893[10000000]                      mov [D2+ebx], dl   ; punem in D2 valoarea din dl
+    33 00000027 43                                  inc ebx            ; crestem lungimea lui D2
+    34 00000028 EB07                                jmp mai_departe    ; sarim peste instructiunile din D1
+    35                                              
+    36                                                  muta_D1:
+    37 0000002A 8890[08000000]                      mov [D1+eax], dl   ; punem in D1 valoarea din dl
+    38 00000030 40                                  inc eax            ; crestem lungimea lui D1
+    39                                              
+    40                                              mai_departe:
+    41 00000031 46                                  inc esi
+    42 00000032 E2E2                                loop repeta               ; cat timp ecx != 0
+    43                                          
+    44                                          sfarsit:
+    45                                          
+    46 00000034 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    47 00000036 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

@@ -1,0 +1,4 @@
+cd C:\Users\alex\Desktop\lab 12 asc
+nasm proc.asm -fwin32 -o proc.obj
+cl main.c /link proc.obj
+main.exe

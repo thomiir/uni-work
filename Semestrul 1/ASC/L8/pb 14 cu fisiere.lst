@@ -1,0 +1,58 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit, fopen, fclose, fprintf; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                  import fopen msvcrt.dll   ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  import fclose msvcrt.dll
+    11                                  import fprintf msvcrt.dll
+    12                                  ; our data is declared here (the variables needed by our program)
+    13                                  segment data use32 class=data
+    14 00000000 70726F626C656D6131-         nume_fisier db "problema14.txt", 0
+    14 00000009 342E74787400       
+    15 0000000F 7700                        mod_acces db "w", 0
+    16 00000011 FFFFFFFF                    descriptor_fisier dd -1
+    17 00000015 616263646541424344-         text db "abcdeABCDe12?!", 0
+    17 0000001E 6531323F2100       
+    18                                      len equ $-text
+    19                                  
+    20                                  ; our code starts here
+    21                                  segment code use32 class=code
+    22                                      start:
+    23 00000000 B90F000000                      mov ecx, len                   ; punem in ecx lungimea textului
+    24 00000005 BB00000000                      mov ebx, 0                     ; punem in ebx index-ul pe care il folosim pentru text
+    25 0000000A B0E0                            mov al, 'A' - 'a'              ; punem in al diferenta 'A' - 'a'
+    26 0000000C E35B                            jecxz final                    ; sarim la final daca ecx = 0
+    27                                          repeta:
+    28 0000000E 80BB[15000000]41                    cmp byte [text + ebx], 'A' ; comparam la nivel de octet caracterul curent de la adresa [text + ebx]
+    29 00000015 720F                                jnae fin                   ; daca [text + ebx] < 'A' inseamna ca nu este litera mare 
+    30 00000017 80BB[15000000]5A                    cmp byte [text + ebx], 'Z' ; comparam la nivel de octet elementul curent de la adresa [text + ebx]
+    31 0000001E 7706                                jnbe fin                   ; daca [text + ebx] > 'Z' inseamna ca nu este litera mare
+    32 00000020 2883[15000000]                      sub [text + ebx], al       ; daca este litera mare, scadem 'A' - 'a'
+    33                                              fin:
+    34 00000026 43                                      inc ebx                ; crestem ebx ca sa trecem la urmatorul caracter din text
+    35 00000027 E2E5                            loop repeta                    ; repetam loop-ul pana cand ecx = 0 (am terminat toate caracterele din text)
+    36                                           
+    37 00000029 68[0F000000]                    push dword mod_acces           ; punem pe stiva modul de acces
+    38 0000002E 68[00000000]                    push dword nume_fisier         ; punem pe stiva numele fisierului
+    39 00000033 FF15[00000000]                  call [fopen]                   ; deschidem fisierul
+    40 00000039 83C408                          add esp, 4 * 2                 ; mutam pointerul esp cu 8 pozitii
+    41                                          
+    42 0000003C A3[11000000]                    mov [descriptor_fisier], eax   ; mutam in descriptorul fisierului valoarea din registrul eax
+    43 00000041 83F800                          cmp eax, 0                     ; comparam eax cu 0
+    44 00000044 7423                            je final                       ; daca este 0, inseamna ca fisierul nu s-a deschis cum trebuie si sarim la final
+    45 00000046 68[15000000]                    push dword text                ; punem pe stiva adresa textului care trebuie afisat
+    46 0000004B FF35[11000000]                  push dword [descriptor_fisier] ; punem pe stiva descriptorul fisierului
+    47 00000051 FF15[00000000]                  call [fprintf]                 ; scriem in fisier textul
+    48 00000057 83C408                          add esp, 4 * 2                 ; mutam pointerul esp cu 8 pozitii 
+    49                                          
+    50 0000005A FF35[11000000]                  push dword [descriptor_fisier] ; punem pe stiva descriptorul fisierului
+    51 00000060 FF15[00000000]                  call [fclose]                  ; inchidem fisierul
+    52 00000066 83C408                          add esp, 4 * 2                 ; mutam pointerul esp cu 8 pozitii
+    53                                          
+    54                                          final:
+    55 00000069 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    56 0000006B FF15[00000000]                  call    [exit]       ; call exit to terminate the program

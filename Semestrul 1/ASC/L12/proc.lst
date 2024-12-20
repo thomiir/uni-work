@@ -1,0 +1,41 @@
+     1                                  bits 32
+     2                                  global _base10
+     3                                  segment data public data use32
+     4                                  segment code public code use32
+     5                                  
+     6                                  _base10:                 ; base10(sir)
+     7                                      ; codul de intrare
+     8 00000000 55                          push ebp             ; il punem pe ebp pe stiva
+     9 00000001 89E5                        mov ebp, esp         ; definim un cadru de stiva cu ebp ca referinta
+    10 00000003 83EC04                      sub esp, 4 * 1       ; alocam spatiu pe stiva pentru parametru
+    11 00000006 50                          push eax             ; salvam eax pentru a-l putea restaura (salvam registrul volatil in uz)
+    12 00000007 52                          push edx             ; salvam edx pentru a-l putea restaura (salvam registrul volatil in uz)
+    13                                      
+    14 00000008 8B7508                      mov esi, [ebp + 8]   ; punem in esi adresa de inceput a sirului pe care il parcurgem
+    15 0000000B FC                      	cld                  ; setam df la 0 ca sa parcurgem sirul de la adrese mici spre adrese mari
+    16 0000000C BA00000000              	mov edx, 0           ; initializam edx cu 0
+    17 00000011 B800000000              	mov eax, 0           ; initializam eax cu 0
+    18                                      
+    19                                  	repeta:
+    20 00000016 AC                      		LODSB            ; incarcam in al un element din sir (codul ascii al unei cifre)
+    21                                  		
+    22 00000017 3C00                            cmp al, 0        ; comparam al cu 0
+    23 00000019 7408                    		jz final         ; sarim la eticheta final daca s-a terminat numarul
+    24                                          
+    25 0000001B 2C30                    		sub al, '0'      ; scadem caracterul '0' pentru a obtine valoarea cifrei respective
+    26 0000001D D1E2                    		shl edx, 1       ; shiftam la stanga cu o pozitie bitii lui edx ca sa facem loc 
+    27                                                           ; unui nou  bit
+    28 0000001F 01C2                    		add edx, eax     ; adaugam bitul obtinut in eax la edx
+    29                                          
+    30 00000021 EBF3                    		jmp repeta		 ; sarim la eticheta repeta pentru a reexecuta continutul buclei
+    31                                  	
+    32                                      final:
+    33 00000023 89D0                    	mov eax, edx         ; eax ia valoarea lui edx (functia returneaza un intreg, a carui 
+    34                                                           ; valoare trebuie pusa in eax)
+    35                                  	
+    36                                      ; codul de iesire           
+    37 00000025 89EC                        mov esp, ebp         ; esp ia valoarea lui ebp
+    38 00000027 5D                          pop ebp              ; il scoatem pe ebp inapoi din stiva
+    39                                      
+    40 00000028 C20400                      ret 4                ; ne intoarcem in programul C
+    41                                      

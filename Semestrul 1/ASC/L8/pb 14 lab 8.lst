@@ -1,0 +1,58 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit, printf, scanf               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                  import printf msvcrt.dll  ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  import scanf msvcrt.dll
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  segment data use32 class=data
+    13 00000000 00000000                    a dd 0
+    14 00000004 00000000                    b dd 0
+    15 00000008 61202B20622028696E-         message db "a + b (in baza 10) = %d", 0
+    15 00000011 2062617A6120313029-
+    15 0000001A 203D20256400       
+    16 00000020 61203D2000                  read_a db "a = ", 0
+    17 00000025 62203D2000                  read_b db "b = ", 0
+    18 0000002A 257800                      format db "%x", 0
+    19                                  
+    20                                  ; our code starts here
+    21                                  segment code use32 class=code
+    22                                      start:
+    23                                          
+    24 00000000 68[20000000]                    push dword read_a   ; punem in stiva adresa mesajului "a = "
+    25 00000005 FF15[00000000]                  call [printf]       ; apelam functia printf pentru a afisa mesajul
+    26 0000000B 83C404                          add esp, 4          ; mutam pointerul esp cu 4 pozitii 
+    27                                          
+    28 0000000E 68[00000000]                    push dword a        ; punem in stiva adresa variabilei a
+    29 00000013 68[2A000000]                    push dword format   ; punem in stiva formatul "%x" (hex)
+    30 00000018 FF15[00000000]                  call [scanf]        ; apelam functia scanf pentru a citi variabila a
+    31 0000001E 83C408                          add esp, 4 * 2      ; mutam pointerul esp cu 8 pozitii 
+    32                                          
+    33 00000021 A1[00000000]                    mov eax, [a]        ; punem in eax valoarea variabilei a
+    34 00000026 50                              push eax            ; punem eax in stiva deoarece functia scanf ii modifica valoarea
+    35                                          
+    36 00000027 68[25000000]                    push dword read_b   ; punem in stiva mesajul "b = "
+    37 0000002C FF15[00000000]                  call [printf]       ; afisam mesajul
+    38 00000032 83C404                          add esp, 4          ; mutam pointerul esp cu 4 pozitii 
+    39                                          
+    40 00000035 68[04000000]                    push dword b        ; punem in stiva adresa variabilei b
+    41 0000003A 68[2A000000]                    push dword format   ; punem in stiva formatul "%x" (hex)
+    42 0000003F FF15[00000000]                  call [scanf]        ; apelam functia scanf pentru a citi variabila a
+    43 00000045 83C408                          add esp, 4 * 2      ; mutam pointerul esp cu 8 pozitii 
+    44                                          
+    45 00000048 8B1D[04000000]                  mov ebx, [b]        ; punem in ebx valoarea variabilei b
+    46 0000004E 58                              pop eax             ; il scoatem pe eax din stiva
+    47 0000004F 01D8                            add eax, ebx        ; la eax adunam ebx, eax = a + b (hex)
+    48                                          
+    49 00000051 50                              push eax            ; punem in stiva registrul eax
+    50 00000052 68[08000000]                    push dword message  ; punem in stiva adresa mesajului message
+    51 00000057 FF15[00000000]                  call [printf]       ; apelam functia printf pentru a afisa mesajul 
+    52 0000005D 83C408                          add esp, 4 * 2      ; mutam pointerul esp cu 8 pozitii 
+    53                                          
+    54                                          
+    55 00000060 6A00                            push    dword 0     ; push the parameter for exit onto the stack
+    56 00000062 FF15[00000000]                  call    [exit]      ; call exit to terminate the program
